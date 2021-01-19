@@ -46,13 +46,14 @@ namespace WindowsFormsApp1
 
         private void label2_Click(object sender, EventArgs e)
         {
-            Form2 f = new Form2();
+            Form1 f = new Form1();
             f.Show();
         }
 
         private void label3_Click(object sender, EventArgs e)
         {
-
+            Form2 f = new Form2();
+            f.Show();
         }
     }
 }
