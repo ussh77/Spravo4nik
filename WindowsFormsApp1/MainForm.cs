@@ -15,6 +15,7 @@ namespace WindowsFormsApp1
         public MainForm()
         {
             InitializeComponent();
+            comboBox1.SelectedIndex = 0;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -34,6 +35,9 @@ namespace WindowsFormsApp1
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            label2.Visible = comboBox1.Text == "8";
+            label3.Visible = comboBox1.Text == "8";
+            label4.Visible = comboBox1.Text == "8";
 
         }
 
@@ -44,16 +48,26 @@ namespace WindowsFormsApp1
             f.Show();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e )
         {
-            Form1 f = new Form1();
+            ThemeForm f = new ThemeForm("Теорема Пифагора");
             f.Show();
         }
 
         private void label3_Click(object sender, EventArgs e)
         {
-            Form2 f = new Form2();
+            ThemeForm f = new ThemeForm("Дробные выражения");
             f.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
