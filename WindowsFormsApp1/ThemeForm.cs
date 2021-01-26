@@ -9,20 +9,34 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp1
-{
+{  
+
     public partial class ThemeForm : Form
     {
         public ThemeForm(string theme)
         {
             InitializeComponent();
 
+            Text = theme;
             if (theme == "Теорема Пифагора")
             {
-                pictureBox1.Load("../../../Картинки/теорпиф.PNG");
+                //pictureBox1.Load("../../../Картинки/Теорема Пифагора.PNG");
+                pictureBox1.Load("../../../Картинки/" + theme + ".PNG");
             }
             if (theme == "Дробные выражения")
             {
-                pictureBox1.Load("../../../Картинки/дробные выр 1.PNG");
+                // pictureBox1.Load("../../../Картинки/Дробные выражения.PNG");
+                pictureBox1.Load("../../../Картинки/" + theme + ".PNG");
+            }
+            if (theme == "Квадратные уравнения")
+            {
+                //pictureBox1.Load("../../../Картинки/Квадратные уравнения.PNG");
+                pictureBox1.Load("../../../Картинки/" + theme + ".PNG");
+            }
+            if (theme == "Числовые и алгебраические выражения")
+            {
+                // pictureBox1.Load("../../../Картинки/Числовые и алгебраические выражения.PNG");
+                pictureBox1.Load("../../../Картинки/" + theme + ".PNG");
             }
         }
 

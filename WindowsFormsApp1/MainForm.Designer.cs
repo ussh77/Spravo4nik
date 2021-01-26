@@ -93,7 +93,7 @@ namespace WindowsFormsApp1
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 91);
+            this.label2.Location = new System.Drawing.Point(13, 95);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(226, 27);
             this.label2.TabIndex = 4;
