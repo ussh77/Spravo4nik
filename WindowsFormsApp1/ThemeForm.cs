@@ -18,27 +18,15 @@ namespace WindowsFormsApp1
             InitializeComponent();
 
             Text = theme;
-            if (theme == "Теорема Пифагора")
-            {
-                //pictureBox1.Load("../../../Картинки/Теорема Пифагора.PNG");
-                pictureBox1.Load("../../../Картинки/" + theme + ".PNG");
+            
+              
+               pictureBox1.Load("../../../Картинки/" + theme + ".PNG");
+           
+               
+                
             }
-            if (theme == "Дробные выражения")
-            {
-                // pictureBox1.Load("../../../Картинки/Дробные выражения.PNG");
-                pictureBox1.Load("../../../Картинки/" + theme + ".PNG");
-            }
-            if (theme == "Квадратные уравнения")
-            {
-                //pictureBox1.Load("../../../Картинки/Квадратные уравнения.PNG");
-                pictureBox1.Load("../../../Картинки/" + theme + ".PNG");
-            }
-            if (theme == "Числовые и алгебраические выражения")
-            {
-                // pictureBox1.Load("../../../Картинки/Числовые и алгебраические выражения.PNG");
-                pictureBox1.Load("../../../Картинки/" + theme + ".PNG");
-            }
-        }
+            
+        
 
         private void Form1_Load(object sender, EventArgs e)
         {

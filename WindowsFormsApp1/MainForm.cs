@@ -37,12 +37,15 @@ namespace WindowsFormsApp1
         {
             if (comboBox1.Text == "7")
             {
+                label3.Text = "Линейное уравнение";
                 label2.Text = "Числовые и алгебраические выражения";
 
             }
             else if (comboBox1.Text == "8")
             {
                 label2.Text = "Теорема Пифагора";
+                
+
             }
 
             label2.Visible = (comboBox1.Text == "8" || comboBox1.Text == "7");
