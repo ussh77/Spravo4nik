@@ -38,26 +38,32 @@ namespace WindowsFormsApp1
             if (comboBox1.Text == "7")
             {
                 label3.Text = "Линейное уравнение";
+                //https://www.yaklass.ru/p/algebra/7-klass/matematicheskii-iazyk-matematicheskaia-model-11008/lineinoe-uravnenie-s-odnoi-peremennoi-9113/re-06b230f6-a2a6-43c0-99c1-23f1abe01318
                 label2.Text = "Числовые и алгебраические выражения";
-
+                //https://www.yaklass.ru/p/algebra/7-klass/matematicheskii-iazyk-matematicheskaia-model-11008/chislovye-i-algebraicheskie-vyrazheniia-11967/re-42838965-88e5-4eb4-b2c7-9eb47fffe83e
+                label4.Text = "Системы двух линейных уравнений с двумя переменными";
             }
+
             else if (comboBox1.Text == "8")
             {
                 label2.Text = "Теорема Пифагора";
-                
-
+                //https://www.yaklass.ru/p/geometria/8-klass/ploshchadi-figur-9235/teorema-pifagora-9225/re-c8adcccc-87a7-47f4-ae00-4d42ac40b985
+                label3.Text = "Дробные выражения";
+                //https://www.yaklass.ru/p/algebra/8-klass/algebraicheskie-drobi-arifmeticheskie-operatcii-nad-algebraicheskimi-drobi_-9085/osnovnye-poniatiia-11009/re-b1c21db0-a52f-40a0-ad04-8276f5033291
+                label4.Text = "Квадратные уравнения";
+                //https://www.yaklass.ru/p/algebra/8-klass/kvadratnye-uravneniia-11021/formuly-kornei-kvadratnogo-uravneniia-9115/re-7fc77e6b-731f-49f6-a4f9-b47915b58517#:~:text=%D0%A2%D0%B5%D0%BE%D1%80%D0%B8%D1%8F%3A,%E2%89%A0%200%20%2C%20%D0%BD%D0%B0%D0%B7%D1%8B%D0%B2%D0%B0%D0%B5%D1%82%D1%81%D1%8F%20%D0%BA%D0%B2%D0%B0%D0%B4%D1%80%D0%B0%D1%82%D0%BD%D1%8B%D0%BC%20%D1%83%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC.
             }
 
             label2.Visible = (comboBox1.Text == "8" || comboBox1.Text == "7");
-            label3.Visible = comboBox1.Text == "8";
-            label4.Visible = comboBox1.Text == "8";
+            label3.Visible = comboBox1.Text == "8" || comboBox1.Text == "7";
+            label4.Visible = comboBox1.Text == "8" || comboBox1.Text == "7";
 
         }
 
         private void label4_Click(object sender, EventArgs e)
         {
-
-            ThemeForm f = new ThemeForm("Дробные выражения");
+            Label lbl = (Label)sender;
+            ThemeForm f = new ThemeForm(lbl.Text);
             f.Show();
         }
 
@@ -70,7 +76,8 @@ namespace WindowsFormsApp1
 
         private void label3_Click(object sender, EventArgs e)
         {
-            ThemeForm f = new ThemeForm("Квадратные уравнения");
+            Label lbl = (Label)sender;
+            ThemeForm f = new ThemeForm(lbl.Text);
             f.Show();
         }
 
