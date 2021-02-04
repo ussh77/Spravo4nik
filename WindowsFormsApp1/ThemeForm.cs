@@ -20,8 +20,12 @@ namespace WindowsFormsApp1
             InitializeComponent();
 
             Text = theme;
+            try
+            {
+                pictureBox1.Load("../../../Картинки/" + theme + ".PNG");
+            }
+            catch(Exception) { }
 
-            pictureBox1.Load("../../../Картинки/" + theme + ".PNG");
             if (theme == "Линейное уравнение")
             {
                 link = "https://www.yaklass.ru/p/algebra/7-klass/matematicheskii-iazyk-matematicheskaia-model-11008/lineinoe-uravnenie-s-odnoi-peremennoi-9113/re-06b230f6-a2a6-43c0-99c1-23f1abe01318";
@@ -51,9 +55,43 @@ namespace WindowsFormsApp1
             {
                 link = "https://www.yaklass.ru/p/geometria/8-klass/ploshchadi-figur-9235/teorema-pifagora-9225/re-c8adcccc-87a7-47f4-ae00-4d42ac40b985";
             }
-            
+            if (theme == "Теорема Виета")
 
+            {
+                link = "https://www.yaklass.ru/p/algebra/8-klass/kvadratnye-uravneniia-11021/teorema-vieta-9116/re-1b3fd56d-1f01-4596-9b25-f62857cda735https://www.yaklass.ru/p/algebra/8-klass/kvadratnye-uravneniia-11021/teorema-vieta-9116/re-1b3fd56d-1f01-4596-9b25-f62857cda735re-c8adcccc-87a7-47f4-ae00-4d42ac40b985";
+            }
+            if (theme == "Иррациональные уравнения")
 
+            {
+                link = " https://www.yaklass.ru/p/algebra/8-klass/kvadratnye-uravneniia-11021/irratcionalnye-uravneniia-9120/re-0d81b9ee-4cf3-437f-9eff-c2067fc46893";
+            }
+            if (theme == "Некторые символы математического языка")
+
+            {
+                link = " https://www.yaklass.ru/p/algebra/8-klass/deistvitelnye-chisla-9092/osnovnye-poniatiia-11990/re-53fddb53-eb42-403c-91bc-d2b77f8036e1";
+            }
+            if (theme == "Понятие степени с натуральным показателем")
+
+            {
+                link = " https://www.yaklass.ru/p/algebra/7-klass/stepen-s-naturalnym-pokazatelem-i-ee-svoistva-9095/chto-takoe-stepen-s-naturalnym-pokazatelem-9093/re-df5ae963-7390-44c8-8fd8-99b83378ee26";
+            }
+            if (theme == "Понятие многочлена")
+
+            {
+                link = "https://www.yaklass.ru/p/algebra/7-klass/odnochleny-arifmeticheskie-operatcii-nad-odnochlenami-10482/poniatie-odnochlena-standartnyi-vid-odnochlena-11038/re-6e78c99c-d0a0-44b2-9d03-35446cae7f6a";
+            }
+            if (theme == "Разложение многочлена на множители")
+            {
+                link = "https://www.yaklass.ru/p/algebra/7-klass/odnochleny-arifmeticheskie-operatcii-nad-odnochlenami-10482/poniatie-odnochlena-standartnyi-vid-odnochlena-11038/re-6e78c99c-d0a0-44b2-9d03-35446cae7f6ahttps://www.yaklass.ru/p/algebra/7-klass/razlozhenie-mnogochlena-na-mnozhiteli-11005/chto-takoe-razlozhenie-na-mnozhiteli-11533/re-e7779a57-d403-4730-8cd4-86836fc9de8f";
+            }
+            if (theme == "Делители и кратные")
+            {
+                link = "https://www.yaklass.ru/p/matematika/6-klass/naturalnye-chisla-13968/delimost-naturalnykh-chisel-13854/re-a1c1280c-3929-4f31-8032-c750b616d268";
+            }
+            if (theme == "Положительные и отрицательные числа")
+            {
+                link = "https://www.yaklass.ru/p/matematika/6-klass/ratcionalnye-chisla-13871/polozhitelnye-i-otritcatelnye-chisla-koordinatnaia-priamaia-13769/re-d70678cc-8774-458c-abc7-bedd7791fcf1";
+            }
         }
             
         
