@@ -33,14 +33,21 @@ namespace WindowsFormsApp1
             label6.Text = "";
             label7.Text = "";
 
-            if (comboBox1.Text == "6")
+            if (comboBox1.Text == "5")
+            {
+                label2.Text = "Десятичная система счисления";
+                label3.Text = "Числовые и буквенные выражения";
+
+            }
+
+           else if (comboBox1.Text == "6")
             {
                 label2.Text = "Положительные и отрицательные числа";
                 label3.Text = "Делители и кратные";
                 
             }
 
-             if (comboBox1.Text == "7")
+             else if (comboBox1.Text == "7")
             {
                 label3.Text = "Линейное уравнение";
                 //https://www.yaklass.ru/p/algebra/7-klass/matematicheskii-iazyk-matematicheskaia-model-11008/lineinoe-uravnenie-s-odnoi-peremennoi-9113/re-06b230f6-a2a6-43c0-99c1-23f1abe01318

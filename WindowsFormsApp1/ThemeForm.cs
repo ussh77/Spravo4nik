@@ -92,6 +92,14 @@ namespace WindowsFormsApp1
             {
                 link = "https://www.yaklass.ru/p/matematika/6-klass/ratcionalnye-chisla-13871/polozhitelnye-i-otritcatelnye-chisla-koordinatnaia-priamaia-13769/re-d70678cc-8774-458c-abc7-bedd7791fcf1";
             }
+            if (theme == "Десятичная система счисления")
+            {
+                link = "https://www.yaklass.ru/p/matematika/5-klass/naturalnye-chisla-13442/desiatichnaia-sistema-schisleniia-rimskaia-numeratciia-13051/re-0af75638-6fc0-432e-b119-1cc2255f14d2";
+            }
+            if (theme == "Числовые и буквенные выражения")
+            {
+                link = "https://www.yaklass.ru/p/matematika/5-klass/naturalnye-chisla-13442/chislovye-i-bukvennye-vyrazheniia-13345/re-435a3313-7e50-4abd-a4b6-44eb3c8586ed";
+            }
         }
             
         
