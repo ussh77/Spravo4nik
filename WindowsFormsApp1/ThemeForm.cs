@@ -10,7 +10,6 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {  
-
     public partial class ThemeForm : Form
     {
         string link = "https://google.ru";
@@ -18,6 +17,7 @@ namespace WindowsFormsApp1
         public ThemeForm(string theme)
         {
             InitializeComponent();
+
 
             Text = theme;
             try
@@ -100,7 +100,16 @@ namespace WindowsFormsApp1
             {
                 link = "https://www.yaklass.ru/p/matematika/5-klass/naturalnye-chisla-13442/chislovye-i-bukvennye-vyrazheniia-13345/re-435a3313-7e50-4abd-a4b6-44eb3c8586ed";
             }
-        }
+            if (theme == "Умножение многозначного числа на однозначное в столбик")
+            {
+                link = "https://www.yaklass.ru/p/matematika/4-klass/umnozhenie-16993/umnozhenie-na-odnoznachnoe-chislo-raspredelitelnyi-zakon-umnozheniia-otno_-16994/re-e3701101-46a9-4151-968b-dba5b9f990cf";
+            }
+            if (theme == "Распределительный закон умножения. Умножение в столбик на однозначное число")
+            {
+                    link = "https://www.yaklass.ru/p/matematika/4-klass/umnozhenie-16993/umnozhenie-na-odnoznachnoe-chislo-raspredelitelnyi-zakon-umnozheniia-otno_-16994/re-ef875e00-0aeb-4ac0-8568-2d5358ee78d8";
+            }
+
+            }
             
         
 

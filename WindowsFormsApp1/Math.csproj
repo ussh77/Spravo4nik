@@ -55,6 +55,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AllThemes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllThemes.Designer.cs">
+      <DependentUpon>AllThemes.cs</DependentUpon>
+    </Compile>
     <Compile Include="ThemeForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +75,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AllThemes.resx">
+      <DependentUpon>AllThemes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ThemeForm.resx">
       <DependentUpon>ThemeForm.cs</DependentUpon>
     </EmbeddedResource>

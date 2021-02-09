@@ -57,3 +57,15 @@ C:\Users\000-g\Downloads\Spravo4nik-main (1)\Spravo4nik-main\WindowsFormsApp1\ob
 C:\Users\000-g\Downloads\Spravo4nik-main (1)\Spravo4nik-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
 C:\Users\000-g\Downloads\Spravo4nik-main (1)\Spravo4nik-main\WindowsFormsApp1\obj\Debug\Math.csproj.GenerateResource.cache
 C:\Users\000-g\Downloads\Spravo4nik-main (1)\Spravo4nik-main\WindowsFormsApp1\obj\Debug\Math.csproj.CoreCompileInputs.cache
+C:\Users\user\Downloads\Spravo4nik-main (2)\Spravo4nik-main\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\user\Downloads\Spravo4nik-main (2)\Spravo4nik-main\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\user\Downloads\Spravo4nik-main (2)\Spravo4nik-main\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\user\Downloads\Spravo4nik-main (2)\Spravo4nik-main\WindowsFormsApp1\obj\Debug\Math.csprojAssemblyReference.cache
+C:\Users\user\Downloads\Spravo4nik-main (2)\Spravo4nik-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ThemeForm.resources
+C:\Users\user\Downloads\Spravo4nik-main (2)\Spravo4nik-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.MainForm.resources
+C:\Users\user\Downloads\Spravo4nik-main (2)\Spravo4nik-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\user\Downloads\Spravo4nik-main (2)\Spravo4nik-main\WindowsFormsApp1\obj\Debug\Math.csproj.GenerateResource.cache
+C:\Users\user\Downloads\Spravo4nik-main (2)\Spravo4nik-main\WindowsFormsApp1\obj\Debug\Math.csproj.CoreCompileInputs.cache
+C:\Users\user\Downloads\Spravo4nik-main (2)\Spravo4nik-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\user\Downloads\Spravo4nik-main (2)\Spravo4nik-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\user\Downloads\Spravo4nik-main (2)\Spravo4nik-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AllThemes.resources

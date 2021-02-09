@@ -33,6 +33,14 @@ namespace WindowsFormsApp1
             label6.Text = "";
             label7.Text = "";
 
+            
+                 if (comboBox1.Text == "4")
+            {
+                label2.Text = "Распределительный закон умножения.Умножение в столбик на однозначное число";
+                label3.Text = "Умножение многозначного числа на однозначное в столбик";
+
+            }
+
             if (comboBox1.Text == "5")
             {
                 label2.Text = "Десятичная система счисления";
@@ -111,6 +119,12 @@ namespace WindowsFormsApp1
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            AllThemes allThemes = new AllThemes();
+            allThemes.Show();
         }
     }
 }
