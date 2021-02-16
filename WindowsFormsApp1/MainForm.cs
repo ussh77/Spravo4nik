@@ -15,7 +15,9 @@ namespace WindowsFormsApp1
         public MainForm()
         {
             InitializeComponent();
+            
             comboBox1.SelectedIndex = 0;
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -125,6 +127,26 @@ namespace WindowsFormsApp1
         {
             AllThemes allThemes = new AllThemes();
             allThemes.Show();
+        }
+       
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            if(button1.Text == "Темная тема")
+            {
+                button1.BackColor = Color.FromArgb(25, 25, 25);
+                button2.BackColor = Color.FromArgb(25, 25, 25);
+                BackColor = Color.FromArgb(25, 25, 25);
+                ForeColor = Color.FromArgb(255, 255, 255);
+                button1.Text = "Светлая тема";
+            }
+            else
+            {
+                button1.BackColor = Color.FromArgb(255, 255, 255);
+                button2.BackColor = Color.FromArgb(255, 255, 255);
+                BackColor = Color.FromArgb(255, 255, 255);
+                ForeColor = Color.FromArgb(0, 0, 0);
+                button1.Text = "Темная тема";
+            }
         }
     }
 }

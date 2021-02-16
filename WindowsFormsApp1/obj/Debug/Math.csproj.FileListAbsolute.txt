@@ -69,3 +69,4 @@ C:\Users\user\Downloads\Spravo4nik-main (2)\Spravo4nik-main\WindowsFormsApp1\obj
 C:\Users\user\Downloads\Spravo4nik-main (2)\Spravo4nik-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\user\Downloads\Spravo4nik-main (2)\Spravo4nik-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 C:\Users\user\Downloads\Spravo4nik-main (2)\Spravo4nik-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AllThemes.resources
+C:\Users\user\Downloads\Spravo4nik-main (1)\Spravo4nik-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AllThemes.resources
