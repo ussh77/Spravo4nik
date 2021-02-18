@@ -34,6 +34,7 @@ namespace WindowsFormsApp1
             this.panel1 = new System.Windows.Forms.Panel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.classLBL = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -83,11 +84,22 @@ namespace WindowsFormsApp1
             this.classLBL.Text = "Выберите класс";
             this.classLBL.Click += new System.EventHandler(this.classLBL_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(296, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Поиск";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Search);
+            // 
             // AllThemes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.classLBL);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.panel1);
@@ -106,5 +118,6 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label classLBL;
+        private System.Windows.Forms.Button button1;
     }
 }
