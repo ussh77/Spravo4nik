@@ -22,7 +22,7 @@ namespace WindowsFormsApp1
             Text = theme;
             try
             {
-                pictureBox1.Load("../../../Картинки/" + theme + ".PNG");
+                pictureBox1.Load("../../../Pictures/" + theme + ".PNG");
             }
             catch(Exception) { }
 

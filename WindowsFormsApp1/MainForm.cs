@@ -133,9 +133,10 @@ namespace WindowsFormsApp1
         {
             if(button1.Text == "Темная тема")
             {
-                button1.BackColor = Color.FromArgb(25, 25, 25);
-                button2.BackColor = Color.FromArgb(25, 25, 25);
-                BackColor = Color.FromArgb(25, 25, 25);
+                button1.BackColor = Color.FromArgb(45, 45, 48);
+                button2.BackColor = Color.FromArgb(45, 45, 48);
+                button3.BackColor = Color.FromArgb(45, 45, 48);
+                BackColor = Color.FromArgb(45, 45, 48);
                 ForeColor = Color.FromArgb(255, 255, 255);
                 button1.Text = "Светлая тема";
             }
@@ -143,10 +144,17 @@ namespace WindowsFormsApp1
             {
                 button1.BackColor = Color.FromArgb(255, 255, 255);
                 button2.BackColor = Color.FromArgb(255, 255, 255);
+                button3.BackColor = Color.FromArgb(255, 255, 255);
                 BackColor = Color.FromArgb(255, 255, 255);
                 ForeColor = Color.FromArgb(0, 0, 0);
                 button1.Text = "Темная тема";
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Bookmarks bookmarks = new Bookmarks();
+            bookmarks.Show();
         }
     }
 }
