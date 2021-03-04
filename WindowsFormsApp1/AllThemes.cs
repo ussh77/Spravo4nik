@@ -32,6 +32,7 @@ namespace WindowsFormsApp1
     {
         //Theme[] themes_list = new Theme[20];
         public static List<Theme> themes_list = new List<Theme>();
+        public static List<Theme> zakladki = new List<Theme>();
         public AllThemes()
         {
             InitializeComponent();
@@ -46,6 +47,7 @@ namespace WindowsFormsApp1
             themes_list.Add(new Theme("Понятие степени с натуральным показателем", "7", "Понятие, Степени, Показателем, Натуральным"));
             themes_list.Add(new Theme("Понятие многочлена", "7", "Понятие, Алгебра, Многочлена"));
 
+            zakladki.Add(themes_list[0]);
             int y = 25;
             for (int i = 0; i < themes_list.Count; i++)
             {
@@ -53,14 +55,6 @@ namespace WindowsFormsApp1
                 themes_list[i].label.Size = new Size(400, 25);
                 themes_list[i].label.Text = themes_list[i].theme;
                 themes_list[i].label.Font = new Font("Arial", 13);
-                /*= new Label
-                {   
-                    Location = new Point(10, y),
-                    Size = new Size(400, 25),
-                    Text = themes_list[i].theme,
-                    Font = new Font("Arial", 13),
-                };*/
-
                 themes_list[i].label.Click += new EventHandler(PrimerClick);
                 panel1.Controls.Add(themes_list[i].label); 
                 y = y + 30;              
@@ -71,7 +65,7 @@ namespace WindowsFormsApp1
         {
 
         }
-        private void PrimerClick(object sender, EventArgs e)
+        public static void PrimerClick(object sender, EventArgs e)
         {
             Label lbl = (Label)sender;
             if (lbl.Text != "")
