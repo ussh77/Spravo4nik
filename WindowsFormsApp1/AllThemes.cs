@@ -33,9 +33,11 @@ namespace WindowsFormsApp1
         //Theme[] themes_list = new Theme[20];
         public static List<Theme> themes_list = new List<Theme>();
         public static List<Theme> zakladki = new List<Theme>();
-        public AllThemes()
+        /// <summary>
+        /// Заполнение всех тем
+        /// </summary>
+        public static void FillThemes()
         {
-            InitializeComponent();
             themes_list.Add(new Theme("Дробные выражения", "8", "Уравнения, Алгебра"));
             themes_list.Add(new Theme("Квадратные уравнения", "8", "Дробные, Алгебра, Выражения"));
             themes_list.Add(new Theme("Теорема Пифагора", "8", "Теорема, Геометрия, Пифагора, Теорема Пифагора"));
@@ -46,11 +48,17 @@ namespace WindowsFormsApp1
             themes_list.Add(new Theme("Системы двух линейных уравнений с двумя переменными", "7", "Системы, Алгебра, Линейных, Переменными"));
             themes_list.Add(new Theme("Понятие степени с натуральным показателем", "7", "Понятие, Степени, Показателем, Натуральным"));
             themes_list.Add(new Theme("Понятие многочлена", "7", "Понятие, Алгебра, Многочлена"));
+        }
+        public AllThemes()
+        {
+            InitializeComponent();
+            
 
             zakladki.Add(themes_list[0]);
             int y = 25;
             for (int i = 0; i < themes_list.Count; i++)
             {
+                var Label = new Label();
                 themes_list[i].label.Location = new Point(10, y);
                 themes_list[i].label.Size = new Size(400, 25);
                 themes_list[i].label.Text = themes_list[i].theme;
@@ -96,7 +104,6 @@ namespace WindowsFormsApp1
                 }
             }
         }
-
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
