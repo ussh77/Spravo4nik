@@ -17,8 +17,6 @@ namespace WindowsFormsApp1
         public ThemeForm(string theme)
         {
             InitializeComponent();
-
-
             Text = theme;
             try
             {

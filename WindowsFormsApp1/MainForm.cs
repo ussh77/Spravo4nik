@@ -29,20 +29,21 @@ namespace WindowsFormsApp1
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            panel1.Controls.Clear();
             int y = 25;
             for (int i = 0; i < AllThemes.themes_list.Count; i++)
             {
                 //Если класс совпал
                 if (AllThemes.themes_list[i].schoolClass == comboBox1.Text)
                 {
-                   var label = new Label();
-                    AllThemes.themes_list[i].label.Location = new Point(10, y);
-                    AllThemes.themes_list[i].label.Size = new Size(400, 25);
-                    AllThemes.themes_list[i].label.Text = AllThemes.themes_list[i].theme;
-                    AllThemes.themes_list[i].label.Font = new Font("Arial", 13);
-                    AllThemes.themes_list[i].label.Click += new EventHandler(PrimerClick);
-                    panel1.Controls.Add(AllThemes.themes_list[i].label);
-                    y = y + 30;
+                    var label = new Label();
+                    label.Location = new Point(10, y);
+                    label.Size = new Size(panel1.Width - 40, 45);
+                    label.Text = AllThemes.themes_list[i].theme;
+                    label.Font = new Font("Arial", 13);
+                    label.Click += new EventHandler(AllThemes.PrimerClick);
+                    panel1.Controls.Add(label);
+                    y = y + 50;
                 }
             }
             /*
@@ -92,24 +93,16 @@ namespace WindowsFormsApp1
                 label6.Text = "Иррациональные уравнения";
                 label7.Text = "Некоторые символы математического языка";
             }
-
             label2.Visible = (label2.Text != "");
             label3.Visible = (label3.Text != "");
             label4.Visible = (label4.Text != "");
             label5.Visible = (label5.Text != "");
             label6.Visible = (label6.Text != "");
-            label7.Visible = (label7.Text != "");*/
+            label7.Visible = (label7.Text != "");
+            */
         }
 
-        private void PrimerClick(object sender, EventArgs e)
-        {
-            Label lbl = (Label)sender;
-            if (lbl.Text != "")
-            {
-                ThemeForm f = new ThemeForm(lbl.Text);
-                f.Show();
-            }
-        }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -139,6 +132,7 @@ namespace WindowsFormsApp1
                 button1.BackColor = Color.FromArgb(45, 45, 48);
                 button2.BackColor = Color.FromArgb(45, 45, 48);
                 button3.BackColor = Color.FromArgb(45, 45, 48);
+                button4.BackColor = Color.FromArgb(45, 45, 48);
                 BackColor = Color.FromArgb(45, 45, 48);
                 ForeColor = Color.FromArgb(255, 255, 255);
                 button1.Text = "Светлая тема";
@@ -148,6 +142,7 @@ namespace WindowsFormsApp1
                 button1.BackColor = Color.FromArgb(255, 255, 255);
                 button2.BackColor = Color.FromArgb(255, 255, 255);
                 button3.BackColor = Color.FromArgb(255, 255, 255);
+                button4.BackColor = Color.FromArgb(255, 255, 255);
                 BackColor = Color.FromArgb(255, 255, 255);
                 ForeColor = Color.FromArgb(0, 0, 0);
                 button1.Text = "Темная тема";
@@ -163,6 +158,11 @@ namespace WindowsFormsApp1
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://qiwi.com/p/+79378892114"); //пока что на номер
         }
     }
 }

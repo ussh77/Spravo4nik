@@ -48,22 +48,27 @@ namespace WindowsFormsApp1
             themes_list.Add(new Theme("Системы двух линейных уравнений с двумя переменными", "7", "Системы, Алгебра, Линейных, Переменными"));
             themes_list.Add(new Theme("Понятие степени с натуральным показателем", "7", "Понятие, Степени, Показателем, Натуральным"));
             themes_list.Add(new Theme("Понятие многочлена", "7", "Понятие, Алгебра, Многочлена"));
+            themes_list.Add(new Theme("Распределительный закон умножения.Умножение в столбик на однозначное число", "4", "Умножение, Столбик, Математика"));
+            themes_list.Add(new Theme("Умножение многозначного числа на однозначное в столбик", "4", "Умножение, Столбик, Математика"));
+
+            
+
+            for (int i = 0; i < themes_list.Count; i++)
+                themes_list[i].label.Click += new EventHandler(PrimerClick);
         }
         public AllThemes()
         {
             InitializeComponent();
             
-
+            for(int i = 0; i < themes_list.Count; i++)
             zakladki.Add(themes_list[0]);
             int y = 25;
             for (int i = 0; i < themes_list.Count; i++)
             {
-                var Label = new Label();
                 themes_list[i].label.Location = new Point(10, y);
                 themes_list[i].label.Size = new Size(400, 25);
                 themes_list[i].label.Text = themes_list[i].theme;
                 themes_list[i].label.Font = new Font("Arial", 13);
-                themes_list[i].label.Click += new EventHandler(PrimerClick);
                 panel1.Controls.Add(themes_list[i].label); 
                 y = y + 30;              
             }    
