@@ -38,7 +38,9 @@ namespace WindowsFormsApp1
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -110,6 +112,11 @@ namespace WindowsFormsApp1
             resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
             // 
+            // fileSystemWatcher1
+            // 
+            this.fileSystemWatcher1.EnableRaisingEvents = true;
+            this.fileSystemWatcher1.SynchronizingObject = this;
+            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
@@ -121,6 +128,7 @@ namespace WindowsFormsApp1
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -134,6 +142,7 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel panel2;
+        private System.IO.FileSystemWatcher fileSystemWatcher1;
     }
 }
 

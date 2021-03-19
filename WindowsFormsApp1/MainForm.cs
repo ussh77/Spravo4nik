@@ -12,11 +12,16 @@ namespace WindowsFormsApp1
 {
     public partial class MainForm : Form
     {
+        public static bool IsDarkTheme = false;
         public MainForm()
         {
+            
             InitializeComponent();
 
             comboBox1.SelectedIndex = 0;
+            IsDarkTheme = Properties.Settings.Default.IsDarkTheme;
+            ApplyTheme();
+
 
             //AllThemes.themes_list;
 
@@ -106,7 +111,7 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+           
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -127,7 +132,12 @@ namespace WindowsFormsApp1
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            if (button1.Text == "Темная тема")
+            IsDarkTheme = !IsDarkTheme;
+            ApplyTheme();
+        }
+        void ApplyTheme()
+        {
+            if (IsDarkTheme)
             {
                 button1.BackColor = Color.FromArgb(45, 45, 48);
                 button2.BackColor = Color.FromArgb(45, 45, 48);
@@ -146,9 +156,9 @@ namespace WindowsFormsApp1
                 BackColor = Color.FromArgb(255, 255, 255);
                 ForeColor = Color.FromArgb(0, 0, 0);
                 button1.Text = "Темная тема";
+
             }
         }
-
         private void button3_Click(object sender, EventArgs e)
         {
             Bookmarks bookmarks = new Bookmarks();
@@ -162,7 +172,7 @@ namespace WindowsFormsApp1
 
         private void button4_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://qiwi.com/p/+79378892114"); //пока что на номер
+            System.Diagnostics.Process.Start("https://qiwi.com/payment/form/99999?extra[%27accountType%27]=nickname&extra%5B%27account%27%5D=WALKO150"); 
         }
     }
 }

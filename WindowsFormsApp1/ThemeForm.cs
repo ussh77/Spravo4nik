@@ -12,57 +12,37 @@ namespace WindowsFormsApp1
 {  
     public partial class ThemeForm : Form
     {
+        Theme currentTheme;
         string link = "https://google.ru";
-
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            if (!AllThemes.zakladki.Contains(currentTheme))
+            {
+                AllThemes.zakladki.Add(currentTheme);
+                MessageBox.Show("Добавлено");
+            }
+        }
         public ThemeForm(string theme)
         {
             InitializeComponent();
+            foreach(Theme tema in AllThemes.themes_list)
+            {
+                if(tema.theme == theme)
+                {
+                    currentTheme = tema;
+                }
+            }
             Text = theme;
             try
             {
                 pictureBox1.Load("../../../Pictures/" + theme + ".PNG");
             }
             catch(Exception) { }
-
-            if (theme == "Линейное уравнение")
-            {
-                link = "https://www.yaklass.ru/p/algebra/7-klass/matematicheskii-iazyk-matematicheskaia-model-11008/lineinoe-uravnenie-s-odnoi-peremennoi-9113/re-06b230f6-a2a6-43c0-99c1-23f1abe01318";
-            }
-            if (theme == "Числовые и алгебраические выражения")
+ 
             
-            {
-                link = "https://www.yaklass.ru/p/algebra/7-klass/matematicheskii-iazyk-matematicheskaia-model-11008/chislovye-i-algebraicheskie-vyrazheniia-11967/re-42838965-88e5-4eb4-b2c7-9eb47fffe83e";
-            }
-            if (theme == "Системы двух линейных уравнений с двумя переменными")
-
-            {
-                link = "https://www.yaklass.ru/p/algebra/7-klass/sistemy-dvukh-lineinykh-uravnenii-s-dvumia-peremennymi-10998/osnovnye-poniatiia-12436/re-433ba2a5-1afe-43d3-b5ad-2775dcaa9156";
-            }
-            if (theme == "Квадратные уравнения")
-
-            {
-                link = "https://www.yaklass.ru/p/algebra/8-klass/kvadratnye-uravneniia-11021/formuly-kornei-kvadratnogo-uravneniia-9115/re-7fc77e6b-731f-49f6-a4f9-b47915b58517#:~:text=%D0%A2%D0%B5%D0%BE%D1%80%D0%B8%D1%8F%3A,%E2%89%A0%200%20%2C%20%D0%BD%D0%B0%D0%B7%D1%8B%D0%B2%D0%B0%D0%B5%D1%82%D1%81%D1%8F%20%D0%BA%D0%B2%D0%B0%D0%B4%D1%80%D0%B0%D1%82%D0%BD%D1%8B%D0%BC%20%D1%83%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC";
-            }
-            if (theme == "Дробные выражения")
-
-            {
-                link = "https://www.yaklass.ru/p/algebra/8-klass/algebraicheskie-drobi-arifmeticheskie-operatcii-nad-algebraicheskimi-drobi_-9085/osnovnye-poniatiia-11009/re-b1c21db0-a52f-40a0-ad04-8276f5033291";
-            }
-            if (theme == "Теорема Пифагора")
-
-            {
-                link = "https://www.yaklass.ru/p/geometria/8-klass/ploshchadi-figur-9235/teorema-pifagora-9225/re-c8adcccc-87a7-47f4-ae00-4d42ac40b985";
-            }
-            if (theme == "Теорема Виета")
-
-            {
-                link = "https://www.yaklass.ru/p/algebra/8-klass/kvadratnye-uravneniia-11021/teorema-vieta-9116/re-1b3fd56d-1f01-4596-9b25-f62857cda735https://www.yaklass.ru/p/algebra/8-klass/kvadratnye-uravneniia-11021/teorema-vieta-9116/re-1b3fd56d-1f01-4596-9b25-f62857cda735re-c8adcccc-87a7-47f4-ae00-4d42ac40b985";
-            }
-            if (theme == "Иррациональные уравнения")
-
-            {
-                link = " https://www.yaklass.ru/p/algebra/8-klass/kvadratnye-uravneniia-11021/irratcionalnye-uravneniia-9120/re-0d81b9ee-4cf3-437f-9eff-c2067fc46893";
-            }
+    
+           
+         
             if (theme == "Некторые символы математического языка")
 
             {
@@ -72,11 +52,6 @@ namespace WindowsFormsApp1
 
             {
                 link = " https://www.yaklass.ru/p/algebra/7-klass/stepen-s-naturalnym-pokazatelem-i-ee-svoistva-9095/chto-takoe-stepen-s-naturalnym-pokazatelem-9093/re-df5ae963-7390-44c8-8fd8-99b83378ee26";
-            }
-            if (theme == "Понятие многочлена")
-
-            {
-                link = "https://www.yaklass.ru/p/algebra/7-klass/odnochleny-arifmeticheskie-operatcii-nad-odnochlenami-10482/poniatie-odnochlena-standartnyi-vid-odnochlena-11038/re-6e78c99c-d0a0-44b2-9d03-35446cae7f6a";
             }
             if (theme == "Разложение многочлена на множители")
             {
@@ -102,10 +77,7 @@ namespace WindowsFormsApp1
             {
                 link = "https://www.yaklass.ru/p/matematika/4-klass/umnozhenie-16993/umnozhenie-na-odnoznachnoe-chislo-raspredelitelnyi-zakon-umnozheniia-otno_-16994/re-e3701101-46a9-4151-968b-dba5b9f990cf";
             }
-            if (theme == "Распределительный закон умножения. Умножение в столбик на однозначное число")
-            {
-                    link = "https://www.yaklass.ru/p/matematika/4-klass/umnozhenie-16993/umnozhenie-na-odnoznachnoe-chislo-raspredelitelnyi-zakon-umnozheniia-otno_-16994/re-ef875e00-0aeb-4ac0-8568-2d5358ee78d8";
-            }
+          
 
             }
             
@@ -122,8 +94,8 @@ namespace WindowsFormsApp1
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
+        {   if(!AllThemes.zakladki.Contains(currentTheme))
+            MessageBox.Show("Добавлено");
         }
 
         private void button1_Click(object sender, EventArgs e)

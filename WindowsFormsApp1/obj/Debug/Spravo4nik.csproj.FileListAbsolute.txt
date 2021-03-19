@@ -14,3 +14,19 @@ C:\Users\user\Desktop\Новая папка\spravo4nik\WindowsFormsApp1\obj\Debu
 C:\Users\user\Desktop\Новая папка\spravo4nik\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.MainForm.ru.resources
 C:\Users\user\Desktop\Новая папка\spravo4nik\WindowsFormsApp1\bin\Debug\ru\WindowsFormsApp1.resources.dll
 C:\Users\user\Desktop\Новая папка\spravo4nik\WindowsFormsApp1\obj\Debug\ru\WindowsFormsApp1.resources.dll
+D:\Downloads\Spravo4nik-main\Spravo4nik-main\WindowsFormsApp1\obj\Debug\Spravo4nik.csprojAssemblyReference.cache
+D:\Downloads\Spravo4nik-main\Spravo4nik-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+D:\Downloads\Spravo4nik-main\Spravo4nik-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+D:\Downloads\Spravo4nik-main\Spravo4nik-main\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+D:\Downloads\Spravo4nik-main\Spravo4nik-main\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+D:\Downloads\Spravo4nik-main\Spravo4nik-main\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+D:\Downloads\Spravo4nik-main\Spravo4nik-main\WindowsFormsApp1\bin\Debug\ru\WindowsFormsApp1.resources.dll
+D:\Downloads\Spravo4nik-main\Spravo4nik-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AllThemes.resources
+D:\Downloads\Spravo4nik-main\Spravo4nik-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Bookmarks.resources
+D:\Downloads\Spravo4nik-main\Spravo4nik-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ThemeForm.resources
+D:\Downloads\Spravo4nik-main\Spravo4nik-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.MainForm.resources
+D:\Downloads\Spravo4nik-main\Spravo4nik-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\Downloads\Spravo4nik-main\Spravo4nik-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.MainForm.ru.resources
+D:\Downloads\Spravo4nik-main\Spravo4nik-main\WindowsFormsApp1\obj\Debug\Spravo4nik.csproj.GenerateResource.cache
+D:\Downloads\Spravo4nik-main\Spravo4nik-main\WindowsFormsApp1\obj\Debug\Spravo4nik.csproj.CoreCompileInputs.cache
+D:\Downloads\Spravo4nik-main\Spravo4nik-main\WindowsFormsApp1\obj\Debug\ru\WindowsFormsApp1.resources.dll
