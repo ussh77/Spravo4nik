@@ -30,3 +30,20 @@ D:\Downloads\Spravo4nik-main\Spravo4nik-main\WindowsFormsApp1\obj\Debug\WindowsF
 D:\Downloads\Spravo4nik-main\Spravo4nik-main\WindowsFormsApp1\obj\Debug\Spravo4nik.csproj.GenerateResource.cache
 D:\Downloads\Spravo4nik-main\Spravo4nik-main\WindowsFormsApp1\obj\Debug\Spravo4nik.csproj.CoreCompileInputs.cache
 D:\Downloads\Spravo4nik-main\Spravo4nik-main\WindowsFormsApp1\obj\Debug\ru\WindowsFormsApp1.resources.dll
+C:\Users\user\Downloads\Spravo4nik-main (4)\Spravo4nik-main\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\user\Downloads\Spravo4nik-main (4)\Spravo4nik-main\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\user\Downloads\Spravo4nik-main (4)\Spravo4nik-main\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\user\Downloads\Spravo4nik-main (4)\Spravo4nik-main\WindowsFormsApp1\bin\Debug\ru\WindowsFormsApp1.resources.dll
+C:\Users\user\Downloads\Spravo4nik-main (4)\Spravo4nik-main\WindowsFormsApp1\obj\Debug\Spravo4nik.csprojAssemblyReference.cache
+C:\Users\user\Downloads\Spravo4nik-main (4)\Spravo4nik-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AllThemes.resources
+C:\Users\user\Downloads\Spravo4nik-main (4)\Spravo4nik-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Bookmarks.resources
+C:\Users\user\Downloads\Spravo4nik-main (4)\Spravo4nik-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ThemeForm.resources
+C:\Users\user\Downloads\Spravo4nik-main (4)\Spravo4nik-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.MainForm.resources
+C:\Users\user\Downloads\Spravo4nik-main (4)\Spravo4nik-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\user\Downloads\Spravo4nik-main (4)\Spravo4nik-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.MainForm.ru.resources
+C:\Users\user\Downloads\Spravo4nik-main (4)\Spravo4nik-main\WindowsFormsApp1\obj\Debug\Spravo4nik.csproj.GenerateResource.cache
+C:\Users\user\Downloads\Spravo4nik-main (4)\Spravo4nik-main\WindowsFormsApp1\obj\Debug\Spravo4nik.csproj.CoreCompileInputs.cache
+C:\Users\user\Downloads\Spravo4nik-main (4)\Spravo4nik-main\WindowsFormsApp1\obj\Debug\ru\WindowsFormsApp1.resources.dll
+C:\Users\user\Downloads\Spravo4nik-main (4)\Spravo4nik-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\user\Downloads\Spravo4nik-main (4)\Spravo4nik-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\user\Downloads\Spravo4nik-main (4)\Spravo4nik-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Editor.resources

@@ -167,7 +167,7 @@ namespace WindowsFormsApp1
 
         private void label1_Click(object sender, EventArgs e)
         {
-
+            new Editor().Show();
         }
 
         private void button4_Click(object sender, EventArgs e)

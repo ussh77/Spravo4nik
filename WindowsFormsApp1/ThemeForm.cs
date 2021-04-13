@@ -102,5 +102,11 @@ namespace WindowsFormsApp1
         {
             System.Diagnostics.Process.Start(link);
         }
+
+        private void pictureBox2_Click_1(object sender, EventArgs e)
+        {
+            if (!AllThemes.zakladki.Contains(currentTheme))
+                MessageBox.Show("Добавлено");
+        }
     }
 }
