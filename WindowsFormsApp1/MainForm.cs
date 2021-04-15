@@ -127,7 +127,7 @@ namespace WindowsFormsApp1
         private void button2_Click_1(object sender, EventArgs e)
         {
             AllThemes allThemes = new AllThemes();
-            allThemes.Show();
+            allThemes.ShowDialog();
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -143,6 +143,7 @@ namespace WindowsFormsApp1
                 button2.BackColor = Color.FromArgb(45, 45, 48);
                 button3.BackColor = Color.FromArgb(45, 45, 48);
                 button4.BackColor = Color.FromArgb(45, 45, 48);
+                button5.BackColor = Color.FromArgb(45, 45, 48);
                 BackColor = Color.FromArgb(45, 45, 48);
                 ForeColor = Color.FromArgb(255, 255, 255);
                 button1.Text = "Светлая тема";
@@ -153,6 +154,7 @@ namespace WindowsFormsApp1
                 button2.BackColor = Color.FromArgb(255, 255, 255);
                 button3.BackColor = Color.FromArgb(255, 255, 255);
                 button4.BackColor = Color.FromArgb(255, 255, 255);
+                button5.BackColor = Color.FromArgb(255, 255, 255);
                 BackColor = Color.FromArgb(255, 255, 255);
                 ForeColor = Color.FromArgb(0, 0, 0);
                 button1.Text = "Темная тема";
@@ -167,12 +169,17 @@ namespace WindowsFormsApp1
 
         private void label1_Click(object sender, EventArgs e)
         {
-            new Editor().Show();
+            
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://qiwi.com/payment/form/99999?extra[%27accountType%27]=nickname&extra%5B%27account%27%5D=WALKO150"); 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            new Editor().Show();
         }
     }
 }

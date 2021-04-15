@@ -61,9 +61,9 @@ namespace WindowsFormsApp1
     public AllThemes()
         {
             InitializeComponent();
+           ApplyTheme();
             
-            for(int i = 0; i < themes_list.Count; i++)
-            zakladki.Add(themes_list[0]);
+
             int y = 25;
            foreach(Theme tema in themes_list)
             {
@@ -75,8 +75,22 @@ namespace WindowsFormsApp1
                 y = y + 30;              
             }    
         }
-
-        private void AllThemes_Load(object sender, EventArgs e)
+        void ApplyTheme()
+        {
+            if (MainForm.IsDarkTheme)
+            {
+                button1.BackColor = Color.FromArgb(45, 45, 48);
+                BackColor = Color.FromArgb(45, 45, 48);
+                ForeColor = Color.FromArgb(255, 255, 255);
+            }
+            else
+            {
+                button1.BackColor = Color.FromArgb(255, 255, 255);
+                BackColor = Color.FromArgb(255, 255, 255);
+                ForeColor = Color.FromArgb(0, 0, 0);
+            }
+        }
+            private void AllThemes_Load(object sender, EventArgs e)
         {
 
         }

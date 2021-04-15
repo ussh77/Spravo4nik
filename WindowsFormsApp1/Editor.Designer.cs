@@ -122,17 +122,18 @@ namespace WindowsFormsApp1
             this.button1.TabIndex = 5;
             this.button1.Text = "Открыть файл";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(417, 51);
+            this.label4.Location = new System.Drawing.Point(450, 51);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(173, 20);
+            this.label4.Size = new System.Drawing.Size(281, 20);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Добавить картинку";
+            this.label4.Text = "Добавить картинку (только png)";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -151,6 +152,7 @@ namespace WindowsFormsApp1
             this.linkfull.Name = "linkfull";
             this.linkfull.Size = new System.Drawing.Size(293, 28);
             this.linkfull.TabIndex = 8;
+            this.linkfull.Text = "http://";
             // 
             // pictureBox1
             // 
@@ -166,10 +168,11 @@ namespace WindowsFormsApp1
             // 
             this.checkButton.Location = new System.Drawing.Point(304, 257);
             this.checkButton.Name = "checkButton";
-            this.checkButton.Size = new System.Drawing.Size(84, 27);
+            this.checkButton.Size = new System.Drawing.Size(97, 27);
             this.checkButton.TabIndex = 10;
             this.checkButton.Text = "Проверить";
             this.checkButton.UseVisualStyleBackColor = true;
+            this.checkButton.Click += new System.EventHandler(this.checkButton_Click);
             // 
             // textBox3
             // 
