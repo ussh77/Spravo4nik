@@ -38,8 +38,8 @@ namespace WindowsFormsApp1
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.button5 = new System.Windows.Forms.Button();
+            this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.SuspendLayout();
@@ -59,8 +59,8 @@ namespace WindowsFormsApp1
             "9",
             "10",
             "11"});
-            this.comboBox1.Location = new System.Drawing.Point(103, 7);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.comboBox1.Location = new System.Drawing.Point(111, 8);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(5);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(79, 34);
             this.comboBox1.TabIndex = 2;
@@ -69,7 +69,7 @@ namespace WindowsFormsApp1
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 15);
+            this.label1.Location = new System.Drawing.Point(12, 11);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 27);
             this.label1.TabIndex = 3;
@@ -80,10 +80,10 @@ namespace WindowsFormsApp1
             // 
             this.panel1.AutoScroll = true;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 67);
+            this.panel1.Location = new System.Drawing.Point(0, 46);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(883, 341);
+            this.panel1.Size = new System.Drawing.Size(883, 362);
             this.panel1.TabIndex = 7;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -100,10 +100,10 @@ namespace WindowsFormsApp1
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(492, 5);
+            this.button1.Location = new System.Drawing.Point(492, 7);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(179, 37);
+            this.button1.Size = new System.Drawing.Size(179, 35);
             this.button1.TabIndex = 9;
             this.button1.Text = "Темная тема";
             this.button1.UseVisualStyleBackColor = true;
@@ -144,23 +144,23 @@ namespace WindowsFormsApp1
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(883, 67);
+            this.panel2.Size = new System.Drawing.Size(883, 46);
             this.panel2.TabIndex = 12;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(677, 7);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(202, 35);
+            this.button5.TabIndex = 13;
+            this.button5.Text = "Добавление тем";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // fileSystemWatcher1
             // 
             this.fileSystemWatcher1.EnableRaisingEvents = true;
             this.fileSystemWatcher1.SynchronizingObject = this;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(677, 5);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(202, 37);
-            this.button5.TabIndex = 13;
-            this.button5.Text = "Добавление тем";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // MainForm
             // 
@@ -173,7 +173,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.button4);
             this.Font = new System.Drawing.Font("Arial", 13.8F);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "MainForm";
             this.Text = "Справочник по математике";
             this.Load += new System.EventHandler(this.Form1_Load);

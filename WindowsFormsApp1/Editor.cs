@@ -81,7 +81,7 @@ namespace WindowsFormsApp1
                     Environment.NewLine +
                     textBox1.Text + "; " + classs.Text + "; " + textBox3.Text + "; " + linkfull.Text);
 
-                if (address != "")
+              // if (address != "") уже есть проверка адреса картинки
                     File.Copy(address, "../../../Pictures/" + textBox1.Text + ".png");
 
                 MessageBox.Show("Добавлено!");
@@ -100,6 +100,11 @@ namespace WindowsFormsApp1
             System.Diagnostics.Process.Start(linkfull.Text);
         }
         private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void themee_Click(object sender, EventArgs e)
         {
 
         }

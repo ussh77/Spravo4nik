@@ -20,16 +20,13 @@ namespace WindowsFormsApp1
             int y = 25;
             for (int i = 0; i < AllThemes.zakladki.Count; i++)
             {
-                Label label = new Label();
-               label.Location = new Point(10, y);
-                label.Size = new Size(400, 25);
-               label.Text = AllThemes.zakladki[i].theme;
-                label.Font = new Font("Arial", 13);
-                label.Click += new EventHandler(AllThemes.PrimerClick);
-                panel1.Controls.Add(label);
+                UC1 theme = new UC1(AllThemes.zakladki[i]);
+                theme.Location = new Point(10, y);
+                panel1.Controls.Add(theme);
                 y = y + 30;
             }
             //AllThemes.zakladki[0].label;
+
         }
 
         private void Bookmarks_Load(object sender, EventArgs e)
@@ -39,7 +36,7 @@ namespace WindowsFormsApp1
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-
+            
         }
     }
 }

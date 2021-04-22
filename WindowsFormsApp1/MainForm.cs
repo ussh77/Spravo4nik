@@ -21,10 +21,6 @@ namespace WindowsFormsApp1
             comboBox1.SelectedIndex = 0;
             IsDarkTheme = Properties.Settings.Default.IsDarkTheme;
             ApplyTheme();
-
-
-            //AllThemes.themes_list;
-
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -51,64 +47,7 @@ namespace WindowsFormsApp1
                     y = y + 50;
                 }
             }
-            /*
-                label2.Text = "";
-            label3.Text = "";
-            label4.Text = "";
-            label5.Text = "";
-            label6.Text = "";
-            label7.Text = "";
-
-            if (comboBox1.Text == "4")
-            {
-                label2.Text = "Распределительный закон умножения.Умножение в столбик на однозначное число";
-                label3.Text = "Умножение многозначного числа на однозначное в столбик";
-
-            }
-
-            if (comboBox1.Text == "5")
-            {
-                label2.Text = "Десятичная система счисления";
-                label3.Text = "Числовые и буквенные выражения";
-
-            }
-
-            else if (comboBox1.Text == "6")
-            {
-                label2.Text = "Положительные и отрицательные числа";
-                label3.Text = "Делители и кратные";
-
-            }
-
-            else if (comboBox1.Text == "7")
-            {
-                label3.Text = "Линейное уравнение";
-                label4.Text = "Системы двух линейных уравнений с двумя переменными";
-                label2.Text = "Числовые и алгебраические выражения";
-                label5.Text = "Понятие степени с натуральным показателем";
-                label6.Text = "Понятие многочлена";
-                label7.Text = "Разложение многочлена на множители";
-            }
-            else if (comboBox1.Text == "8")
-            {
-                label2.Text = "Теорема Пифагора";
-                label3.Text = "Дробные выражения";
-                label4.Text = "Квадратные уравнения";
-                label5.Text = "Теорема Виета";
-                label6.Text = "Иррациональные уравнения";
-                label7.Text = "Некоторые символы математического языка";
-            }
-            label2.Visible = (label2.Text != "");
-            label3.Visible = (label3.Text != "");
-            label4.Visible = (label4.Text != "");
-            label5.Visible = (label5.Text != "");
-            label6.Visible = (label6.Text != "");
-            label7.Visible = (label7.Text != "");
-            */
         }
-
-
-
         private void button1_Click(object sender, EventArgs e)
         {
            
@@ -173,7 +112,7 @@ namespace WindowsFormsApp1
         }
 
         private void button4_Click(object sender, EventArgs e)
-        {
+        {            
             System.Diagnostics.Process.Start("https://qiwi.com/payment/form/99999?extra[%27accountType%27]=nickname&extra%5B%27account%27%5D=WALKO150"); 
         }
 

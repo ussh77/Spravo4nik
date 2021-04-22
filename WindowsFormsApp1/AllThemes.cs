@@ -56,14 +56,11 @@ namespace WindowsFormsApp1
                 themes_list[i].label.Click += new EventHandler(PrimerClick);
         }
 
-
-
     public AllThemes()
         {
             InitializeComponent();
            ApplyTheme();
-            
-
+             
             int y = 25;
            foreach(Theme tema in themes_list)
             {

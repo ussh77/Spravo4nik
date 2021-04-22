@@ -62,7 +62,8 @@ namespace WindowsFormsApp1
             "9",
             "10",
             "11"});
-            this.classs.Location = new System.Drawing.Point(65, 73);
+            this.classs.Location = new System.Drawing.Point(65, 88);
+            this.classs.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.classs.Name = "classs";
             this.classs.Size = new System.Drawing.Size(121, 24);
             this.classs.TabIndex = 0;
@@ -72,7 +73,7 @@ namespace WindowsFormsApp1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(221, 9);
+            this.label1.Location = new System.Drawing.Point(223, 11);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(301, 29);
             this.label1.TabIndex = 1;
@@ -83,7 +84,7 @@ namespace WindowsFormsApp1
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(1, 73);
+            this.label2.Location = new System.Drawing.Point(-5, 89);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 20);
             this.label2.TabIndex = 2;
@@ -94,16 +95,18 @@ namespace WindowsFormsApp1
             // 
             this.themee.AutoSize = true;
             this.themee.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.themee.Location = new System.Drawing.Point(1, 116);
+            this.themee.Location = new System.Drawing.Point(-5, 116);
             this.themee.Name = "themee";
             this.themee.Size = new System.Drawing.Size(51, 20);
             this.themee.TabIndex = 3;
             this.themee.Text = "Тема";
+            this.themee.Click += new System.EventHandler(this.themee_Click);
             // 
             // textBox1
             // 
             this.textBox1.AllowDrop = true;
             this.textBox1.Location = new System.Drawing.Point(65, 116);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(233, 20);
@@ -112,11 +115,12 @@ namespace WindowsFormsApp1
             // 
             // openFileDialog1
             // 
-            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.Filter = "Картинки|*.png;*.jpg";
             // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(421, 293);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(331, 27);
             this.button1.TabIndex = 5;
@@ -128,11 +132,11 @@ namespace WindowsFormsApp1
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(450, 51);
+            this.label4.Location = new System.Drawing.Point(451, 50);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(281, 20);
+            this.label4.Size = new System.Drawing.Size(173, 20);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Добавить картинку (только png)";
+            this.label4.Text = "Добавить картинку";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
@@ -147,16 +151,18 @@ namespace WindowsFormsApp1
             // 
             // linkfull
             // 
-            this.linkfull.Location = new System.Drawing.Point(5, 259);
+            this.linkfull.Location = new System.Drawing.Point(5, 258);
+            this.linkfull.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.linkfull.Multiline = true;
             this.linkfull.Name = "linkfull";
-            this.linkfull.Size = new System.Drawing.Size(293, 28);
+            this.linkfull.Size = new System.Drawing.Size(293, 29);
             this.linkfull.TabIndex = 8;
             this.linkfull.Text = "http://";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(421, 85);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(331, 202);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -167,6 +173,7 @@ namespace WindowsFormsApp1
             // checkButton
             // 
             this.checkButton.Location = new System.Drawing.Point(304, 257);
+            this.checkButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkButton.Name = "checkButton";
             this.checkButton.Size = new System.Drawing.Size(97, 27);
             this.checkButton.TabIndex = 10;
@@ -178,6 +185,7 @@ namespace WindowsFormsApp1
             // 
             this.textBox3.AllowDrop = true;
             this.textBox3.Location = new System.Drawing.Point(65, 142);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(233, 20);
@@ -187,7 +195,7 @@ namespace WindowsFormsApp1
             // 
             this.taggs.AutoSize = true;
             this.taggs.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.taggs.Location = new System.Drawing.Point(1, 142);
+            this.taggs.Location = new System.Drawing.Point(-5, 143);
             this.taggs.Name = "taggs";
             this.taggs.Size = new System.Drawing.Size(47, 20);
             this.taggs.TabIndex = 11;
@@ -197,9 +205,10 @@ namespace WindowsFormsApp1
             // button3
             // 
             this.button3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button3.Location = new System.Drawing.Point(0, 326);
+            this.button3.Location = new System.Drawing.Point(0, 325);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(800, 56);
+            this.button3.Size = new System.Drawing.Size(800, 57);
             this.button3.TabIndex = 13;
             this.button3.Text = "Добавить";
             this.button3.UseVisualStyleBackColor = true;
@@ -224,6 +233,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.classs);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Editor";
             this.Text = "Editor";
             this.Load += new System.EventHandler(this.Editor_Load);
