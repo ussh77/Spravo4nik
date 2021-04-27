@@ -108,7 +108,17 @@ namespace WindowsFormsApp1
 
         private void label1_Click(object sender, EventArgs e)
         {
-            
+            if (comboBox1.Text == "6")
+            {
+                try
+                {
+
+                    System.Diagnostics.Process.Start("chrome", "file://../../../matematika-6-klass-muravin-g_k_-muravina-o_v_-2014.pdf");//открывается без названия папки проекта и поэтому нер аботает
+                }
+                catch (Exception e1) {
+                    string s = e1.Message;
+                }
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)

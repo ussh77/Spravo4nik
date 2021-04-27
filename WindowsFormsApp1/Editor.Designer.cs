@@ -100,7 +100,7 @@ namespace WindowsFormsApp1
             this.themee.Size = new System.Drawing.Size(51, 20);
             this.themee.TabIndex = 3;
             this.themee.Text = "Тема";
-            this.themee.Click += new System.EventHandler(this.themee_Click);
+         
             // 
             // textBox1
             // 

@@ -38,8 +38,8 @@ namespace WindowsFormsApp1
 
 
             }
-            }
-        
+        }
+
         private void Editor_Load(object sender, EventArgs e)
         {
 
@@ -81,8 +81,8 @@ namespace WindowsFormsApp1
                     Environment.NewLine +
                     textBox1.Text + "; " + classs.Text + "; " + textBox3.Text + "; " + linkfull.Text);
 
-              // if (address != "") уже есть проверка адреса картинки
-                    File.Copy(address, "../../../Pictures/" + textBox1.Text + ".png");
+                // if (address != "") уже есть проверка адреса картинки
+                File.Copy(address, "../../../Pictures/" + textBox1.Text + ".png");
 
                 MessageBox.Show("Добавлено!");
             }
@@ -102,10 +102,7 @@ namespace WindowsFormsApp1
         private void label4_Click(object sender, EventArgs e)
         {
 
-        }
 
-        private void themee_Click(object sender, EventArgs e)
-        {
 
         }
     }

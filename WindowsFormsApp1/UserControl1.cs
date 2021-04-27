@@ -29,5 +29,11 @@ namespace WindowsFormsApp1
         {
             System.Diagnostics.Process.Start(theme1.link);
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            AllThemes.zakladki.Remove(theme1);
+            this.Parent = null;
+        }
     }
 }
