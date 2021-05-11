@@ -5,10 +5,11 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Net;
+using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
-
+using System.Windows.Forms; 
 namespace WindowsFormsApp1
 {
 
@@ -100,7 +101,7 @@ namespace WindowsFormsApp1
         {
             Label lbl = (Label)sender;
             if (lbl.Text != "")
-            {
+            { 
                 ThemeForm f = new ThemeForm(lbl.Text);
                 f.Show();
             }
@@ -137,5 +138,6 @@ namespace WindowsFormsApp1
         {
 
         }
+      
     }
 }

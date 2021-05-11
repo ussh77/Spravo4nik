@@ -13,33 +13,16 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Bookmarks : Form
+    public partial class Contact : Form
     {
-        public Bookmarks()
-
+        public Contact()
         {
-
             InitializeComponent();
-            int y = 25;
-            for (int i = 0; i < AllThemes.zakladki.Count; i++)
-            {
-                UC1 theme = new UC1(AllThemes.zakladki[i]);
-                theme.Location = new Point(10, y);
-                panel1.Controls.Add(theme);
-                y = y + 116;
-            }
-            //AllThemes.zakladki[0].label;
-
         }
 
-        private void Bookmarks_Load(object sender, EventArgs e)
+        private void Contact_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-            
         }
         static void SendMessage(string userName, string adressTo, string messageSubject, string messageText)
         {
@@ -63,15 +46,7 @@ namespace WindowsFormsApp1
                 mess.To.Remove(mess.To[0]);
                 mess.To.Add(from); //для сообщения на свой адрес
                 mess.Subject = "Отправлено сообщение";*/
-                mess.IsBodyHtml = true;
-                mess.Body = File.ReadAllText("../../../1.txt");
-
-                foreach (Theme theme in AllThemes.zakladki)
-                {
-                    mess.Body +=
-                    "<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <a target=\"_blank\" rel=\"nofollow noopener\" href=\"" + theme.link + "\">" + theme.theme + "</a> </p>";
-                }
-
+             
                 client.Send(mess); // отправка себе
                 mess.Dispose();
             }
@@ -80,18 +55,15 @@ namespace WindowsFormsApp1
                 throw new Exception("Mail.Send: " + e.Message);
             }
         }
-        private void button1_Click(object sender, EventArgs e)
+       
+        private void button1_Click_1(object sender, EventArgs e)
         {
-
             string userName = "228"; //имя пользователя
             string adressTo = "9041849542ss@gmail.com"; //адрес пользователя
-            string messageSubject = "Отложенные темы"; //тема
-            string messageText = File.ReadAllText("../../../1.txt");  //текст
+            string messageSubject = textBox1.Text; //тема
+            string messageText = textBox2.Text;  //текст
             SendMessage(userName, adressTo, messageSubject, messageText);
             MessageBox.Show("Письмо отправлено!");
-
         }
-
-       
     }
 }

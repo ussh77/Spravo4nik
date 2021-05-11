@@ -31,6 +31,7 @@ namespace WindowsFormsApp1
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             panel1.Controls.Clear();
+            panel1.Controls.Add(button6);
             int y = 25;
             for (int i = 0; i < AllThemes.themes_list.Count; i++)
             {
@@ -129,6 +130,12 @@ namespace WindowsFormsApp1
         private void button5_Click(object sender, EventArgs e)
         {
             new Editor().Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Contact contact = new Contact();
+            contact.Show();
         }
     }
 }
