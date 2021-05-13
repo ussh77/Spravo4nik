@@ -49,20 +49,6 @@ namespace WindowsFormsApp1
                 }
             }
         }
-        private void button1_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void button2_Click_1(object sender, EventArgs e)
         {
@@ -129,7 +115,10 @@ namespace WindowsFormsApp1
 
         private void button5_Click(object sender, EventArgs e)
         {
-            new Editor().Show();
+            new Editor().ShowDialog();
+            AllThemes.FillThemes();
+            comboBox1_SelectedIndexChanged(sender, e);
+
         }
 
         private void button6_Click(object sender, EventArgs e)

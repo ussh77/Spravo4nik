@@ -44,6 +44,7 @@ namespace WindowsFormsApp1
 
         public static void FillThemes()
         {
+            themes_list = new List<Theme>();
             string[] products = File.ReadAllLines("../../../Предметы.txt");
 
             foreach (string product in products)

@@ -81,10 +81,16 @@ namespace WindowsFormsApp1
                     Environment.NewLine +
                     textBox1.Text + "; " + classs.Text + "; " + textBox3.Text + "; " + linkfull.Text);
 
-                // if (address != "") уже есть проверка адреса картинки
+                if (!address.Contains("Pictures")) 
                 File.Copy(address, "../../../Pictures/" + textBox1.Text + ".png");
 
                 MessageBox.Show("Добавлено!");
+                textBox1.Text = "";
+                classs.Text = "";
+                textBox3.Text = "";
+                linkfull.Text = "";
+                address = "";
+                pictureBox1.Image = null;
             }
             else
             {

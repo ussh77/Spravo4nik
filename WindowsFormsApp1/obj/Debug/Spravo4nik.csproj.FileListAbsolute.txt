@@ -102,3 +102,5 @@ C:\Users\user\Downloads\1489\Spravo4nik-main\WindowsFormsApp1\obj\Debug\ru\Windo
 C:\Users\user\Downloads\1489\Spravo4nik-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\user\Downloads\1489\Spravo4nik-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 C:\Users\user\Downloads\1489\Spravo4nik-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Contact.resources
+C:\Users\user\Downloads\Spravo4nik-main (4)\Spravo4nik-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Contact.resources
+C:\Users\user\Downloads\Spravo4nik-main (4)\Spravo4nik-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.UC1.resources
