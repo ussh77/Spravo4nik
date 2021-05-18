@@ -44,7 +44,6 @@ namespace WindowsFormsApp1
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1084, 554);
             this.panel1.TabIndex = 1;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // button1
             // 
@@ -67,7 +66,6 @@ namespace WindowsFormsApp1
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Bookmarks";
             this.Text = "Закладки";
-            this.Load += new System.EventHandler(this.Bookmarks_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 

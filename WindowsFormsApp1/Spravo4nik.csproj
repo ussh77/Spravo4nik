@@ -74,11 +74,11 @@
     <Compile Include="Contact.Designer.cs">
       <DependentUpon>Contact.cs</DependentUpon>
     </Compile>
-    <Compile Include="Editor.cs">
+    <Compile Include="AddTheme.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Editor.Designer.cs">
-      <DependentUpon>Editor.cs</DependentUpon>
+    <Compile Include="AddTheme.Designer.cs">
+      <DependentUpon>AddTheme.cs</DependentUpon>
     </Compile>
     <Compile Include="ThemeForm.cs">
       <SubType>Form</SubType>
@@ -109,8 +109,8 @@
     <EmbeddedResource Include="Contact.resx">
       <DependentUpon>Contact.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Editor.resx">
-      <DependentUpon>Editor.cs</DependentUpon>
+    <EmbeddedResource Include="AddTheme.resx">
+      <DependentUpon>AddTheme.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.ru.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

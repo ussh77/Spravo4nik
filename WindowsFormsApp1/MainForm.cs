@@ -15,17 +15,10 @@ namespace WindowsFormsApp1
         public static bool IsDarkTheme = false;
         public MainForm()
         {
-            
             InitializeComponent();
-
             comboBox1.SelectedIndex = 0;
             IsDarkTheme = Properties.Settings.Default.IsDarkTheme;
             ApplyTheme();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -49,7 +42,6 @@ namespace WindowsFormsApp1
                 }
             }
         }
-
         private void button2_Click_1(object sender, EventArgs e)
         {
             AllThemes allThemes = new AllThemes();
@@ -70,6 +62,7 @@ namespace WindowsFormsApp1
                 button3.BackColor = Color.FromArgb(45, 45, 48);
                 button4.BackColor = Color.FromArgb(45, 45, 48);
                 button5.BackColor = Color.FromArgb(45, 45, 48);
+                button6.BackColor = Color.FromArgb(45, 45, 48);
                 BackColor = Color.FromArgb(45, 45, 48);
                 ForeColor = Color.FromArgb(255, 255, 255);
                 button1.Text = "Светлая тема";
@@ -81,6 +74,7 @@ namespace WindowsFormsApp1
                 button3.BackColor = Color.FromArgb(255, 255, 255);
                 button4.BackColor = Color.FromArgb(255, 255, 255);
                 button5.BackColor = Color.FromArgb(255, 255, 255);
+                button6.BackColor = Color.FromArgb(255, 255, 255);
                 BackColor = Color.FromArgb(255, 255, 255);
                 ForeColor = Color.FromArgb(0, 0, 0);
                 button1.Text = "Темная тема";
@@ -100,7 +94,7 @@ namespace WindowsFormsApp1
                 try
                 {
 
-                    System.Diagnostics.Process.Start("chrome", "file://../../../matematika-6-klass-muravin-g_k_-muravina-o_v_-2014.pdf");//открывается без названия папки проекта и поэтому нер аботает
+                    System.Diagnostics.Process.Start("chrome", "file://../../../matematika-6-klass-muravin-g_k_-muravina-o_v_-2014.pdf");//открывается без названия папки проекта и поэтому неработает
                 }
                 catch (Exception e1) {
                     string s = e1.Message;
@@ -115,7 +109,7 @@ namespace WindowsFormsApp1
 
         private void button5_Click(object sender, EventArgs e)
         {
-            new Editor().ShowDialog();
+            new AddTheme().ShowDialog();
             AllThemes.FillThemes();
             comboBox1_SelectedIndexChanged(sender, e);
 

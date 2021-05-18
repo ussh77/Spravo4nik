@@ -33,6 +33,7 @@ namespace WindowsFormsApp1
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -40,7 +41,6 @@ namespace WindowsFormsApp1
             this.panel2 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
-            this.button6 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
@@ -89,6 +89,17 @@ namespace WindowsFormsApp1
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(883, 362);
             this.panel1.TabIndex = 7;
+
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(338, 328);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(206, 29);
+            this.button6.TabIndex = 0;
+            this.button6.Text = "Связаться";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button2
             // 
@@ -165,16 +176,6 @@ namespace WindowsFormsApp1
             this.fileSystemWatcher1.EnableRaisingEvents = true;
             this.fileSystemWatcher1.SynchronizingObject = this;
             // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(338, 328);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(206, 29);
-            this.button6.TabIndex = 0;
-            this.button6.Text = "Связаться";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 26F);
@@ -189,7 +190,6 @@ namespace WindowsFormsApp1
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "MainForm";
             this.Text = "Справочник по математике";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

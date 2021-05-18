@@ -19,12 +19,6 @@ namespace WindowsFormsApp1
             InitializeComponent();
             label1.Text = theme.theme;
         }
-
-        private void UC1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             System.Diagnostics.Process.Start(theme1.link);

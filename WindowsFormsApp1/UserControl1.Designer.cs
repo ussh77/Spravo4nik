@@ -77,7 +77,7 @@ namespace WindowsFormsApp1
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UC1";
             this.Size = new System.Drawing.Size(979, 133);
-            this.Load += new System.EventHandler(this.UC1_Load);
+
             this.ResumeLayout(false);
             this.PerformLayout();
 

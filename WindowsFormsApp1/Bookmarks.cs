@@ -28,18 +28,7 @@ namespace WindowsFormsApp1
                 panel1.Controls.Add(theme);
                 y = y + 116;
             }
-            //AllThemes.zakladki[0].label;
 
-        }
-
-        private void Bookmarks_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-            
         }
         static void SendMessage(string userName, string adressTo, string messageSubject, string messageText)
         {
@@ -58,11 +47,6 @@ namespace WindowsFormsApp1
                 client.EnableSsl = true;
                 client.Credentials = new NetworkCredential(from.Split('@')[0], net);
                 client.DeliveryMethod = SmtpDeliveryMethod.Network;
-                /*client.Send(mess); // отправка пользователю
-
-                mess.To.Remove(mess.To[0]);
-                mess.To.Add(from); //для сообщения на свой адрес
-                mess.Subject = "Отправлено сообщение";*/
                 mess.IsBodyHtml = true;
                 mess.Body = File.ReadAllText("../../../1.txt");
 
@@ -92,6 +76,6 @@ namespace WindowsFormsApp1
 
         }
 
-       
+     
     }
 }

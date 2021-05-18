@@ -94,7 +94,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.label1);
             this.Name = "Contact";
             this.Text = "Contact";
-            this.Load += new System.EventHandler(this.Contact_Load);
+
             this.ResumeLayout(false);
             this.PerformLayout();
 

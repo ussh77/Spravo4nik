@@ -19,11 +19,6 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
-
-        private void Contact_Load(object sender, EventArgs e)
-        {
-
-        }
         static void SendMessage(string userName, string adressTo, string messageSubject, string messageText)
         {
             try
